@@ -34,21 +34,21 @@ module toplevel (
         .bus_byte_enable        (bus_byte_enable)
     );
 
-    example_text_memory_bus text_memory_bus (
-        .clock                  (clock),
-        .address                (pc),
-        .read_data              (inst)
-    );
-    
-    example_data_memory_bus data_memory_bus (
-        .clock                  (clock),
-        .address                (bus_address),
-        .read_data              (bus_read_data),
-        .write_data             (bus_write_data),
-        .read_enable            (bus_read_enable),
-        .write_enable           (bus_write_enable),
-        .byte_enable            (bus_byte_enable)
-    );
+    // example_text_memory_bus text_memory_bus (
+    //     .clock                  (clock),
+    //     .address                (pc),
+    //     .read_data              (inst)
+    // );
+    // 
+    // example_data_memory_bus data_memory_bus (
+    //     .clock                  (clock),
+    //     .address                (bus_address),
+    //     .read_data              (bus_read_data),
+    //     .write_data             (bus_write_data),
+    //     .read_enable            (bus_read_enable),
+    //     .write_enable           (bus_write_enable),
+    //     .byte_enable            (bus_byte_enable)
+    // );
     
 endmodule
 
